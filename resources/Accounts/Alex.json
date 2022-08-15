@@ -1,0 +1,22 @@
+[
+  {
+    "CLASSNAME": "OutgoingTransfer",
+    "INSTANCE": {
+      "sender": "Alex",
+      "recipient": "Max",
+      "date": "kefke",
+      "description": "an Max",
+      "amount": -1000.0
+    }
+  },
+  {
+    "CLASSNAME": "IncomingTransfer",
+    "INSTANCE": {
+      "sender": "Max",
+      "recipient": "Alex",
+      "date": ",vd,m,d",
+      "description": "von Max",
+      "amount": 500.0
+    }
+  }
+]

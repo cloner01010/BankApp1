@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bank.AccountviewController">
+   <children>
+      <ListView fx:id="transactionList" layoutX="15.0" layoutY="37.0" prefHeight="359.0" prefWidth="416.0">
+         <contextMenu>
+            <ContextMenu>
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#deleteTransaction" text="Löschen" />
+              </items>
+            </ContextMenu>
+         </contextMenu>
+      </ListView>
+      <Button fx:id="backitup" layoutX="579.0" layoutY="361.0" mnemonicParsing="false" onAction="#backitup" text="Back" />
+      <Label id="kontoname" fx:id="kontoname" layoutX="15.0" layoutY="-6.0" prefHeight="43.0" prefWidth="159.0" text="Transactions">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label id="balance" fx:id="balance" layoutX="180.0" layoutY="2.0" prefHeight="31.0" prefWidth="175.0" text="Kontostand">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="addTransaction" layoutX="442.0" layoutY="355.0" mnemonicParsing="false" onAction="#addTransaction" text="Hinzufügen">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="425.0" layoutY="5.0" mnemonicParsing="false" text="Asc" onAction="#sortasc"/>
+      <Button layoutX="461.0" layoutY="5.0" mnemonicParsing="false" text="Desc" onAction="#sortdesc"/>
+      <Button layoutX="503.0" layoutY="5.0" mnemonicParsing="false" text="Positiv" onAction="#sortpos"/>
+      <Button layoutX="550.0" layoutY="5.0" mnemonicParsing="false" text="Negativ" onAction="#sortneg"/>
+   </children>
+</AnchorPane>
